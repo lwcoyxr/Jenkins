@@ -24,13 +24,13 @@ spec:
   local:
     path: /mnt
   nodeAffinity:
-    required:
-      nodeSelectorTerms:
-      - matchExpressions:
-        - key: kubernetes.io/hostname
-          operator: In
-          values:
-          - dev-kubernetes.us-central1-c.c.infra-446911.internal
+  required:
+    nodeSelectorTerms:
+    - matchExpressions:
+      - key: storage
+        operator: In
+        values:
+        - local
 
 ---
 apiVersion: v1
