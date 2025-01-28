@@ -30,7 +30,7 @@ spec:
         - key: kubernetes.io/hostname
           operator: In
           values:
-          - worker-node01
+          - dev-kubernetes.us-central1-c.c.infra-446911.internal
 
 ---
 apiVersion: v1
